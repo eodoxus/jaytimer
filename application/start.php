@@ -60,6 +60,7 @@ Laravel\Autoloader::$aliases = $aliases;
 
 Autoloader::map(array(
 	'Base_Controller' => path('app').'controllers/base.php',
+	'View' => path('app').'laravel/view.php',
 ));
 
 /*
@@ -139,7 +140,7 @@ if (Config::get('application.profiler'))
 |
 */
 
-Blade::sharpen();
+//Blade::sharpen();
 
 /*
 |--------------------------------------------------------------------------
