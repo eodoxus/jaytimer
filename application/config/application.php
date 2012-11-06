@@ -192,6 +192,7 @@ return array(
 		'Task'       	=> 'Laravel\\CLI\\Tasks\\Task',
 		'URI'        	=> 'Laravel\\URI',
 		'Validator'  	=> 'Laravel\\Validator',
+		'User'  		=> 'Orchestra\\Model\\User',
 		//'View'       	=> 'Laravel\\View',
 	),
 

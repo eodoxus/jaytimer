@@ -34,7 +34,8 @@
 */
 
 return array(
-
 	'docs' => array('handles' => 'docs'),
-
+	'hybrid' => array('auto' => true),
+	'orchestra' => array('handles' => 'admin'),
+	'bundocs' => array('auto' => true, 'handles' => 'bundocs'),
 );

@@ -22,7 +22,9 @@
 */
 
 $environments = array(
-	'local' => array('*.local', '*.dev'),
+
+	'local' => array('http://localhost*', '*.dev'),
+
 );
 
 // --------------------------------------------------------------

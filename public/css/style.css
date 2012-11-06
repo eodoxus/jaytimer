@@ -1,0 +1,45 @@
+/** Copy **/
+h1 { font-size:28px; line-height:32px; }
+h1.page-title { font-size:36px; line-height:36px; text-transform:uppercase; font-family:Georgia; }
+h3 { font-size:20px; line-height:22px; }
+h4 { font-size:16px; line-height:18px; }
+h5 { font-size:14px; line-height:16px; text-transform:uppercase; }
+h6 { font-size:12px; line-height:14px; font-weight:normal; }
+p {	font-size:14px; line-height:20px; }
+label { font-size:10px; line-height: 12px; text-transform:uppercase; }
+.uppercase { text-transform:uppercase; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.list.horizontal li { float:left; }
+/** End Copy **/
+
+.sprite { background:transparent url(../img/sprite.png) 0 0; display:block; }
+.main.content { padding-top:45px; }
+
+.timer { border-radius:4px; border:1px solid #ddd; padding:5px 10px; }
+.row-fluid .span6.timer { margin: 20px 0 0px 25%; }
+.timer header { margin-bottom:2px; background:#ddd; padding: 5px 10px; }
+.timer header .pull-left { margin:0 5px 0 0; }
+.timer input[name="start"] { width:9px; height:11px; padding: 3px 4px 3px 2px; font-size:11px; }
+.timer header h4.pull-left, .timer header p.pull-left, .timer header .date, .timer header .time { margin-top:0; }
+.timer header .date { margin:0 5px 0 0; }
+.timer .bubble { width:10px; height:16px; background-position: -1px -1px; float:left; cursor:pointer; }
+.timer .bubble:hover { background-position: -12px -1px; }
+.timer .bubble.filled { background-position: -23px -1px; }
+.timer .striped .odd { background:#eee; }
+.timer table td.info, .timer table th.info { padding:5px 10px; width: 20%; text-align: left; }
+.timer table th.info  { font-size:11px; font-weight: normal; padding-left:2px; }
+.timer table .nowrap { width:40px; margin:auto; white-space:nowrap; position:relative; z-index:1; }
+.timer table th { position:relative; border-bottom: 1px solid #ccc; }
+.timer table th .square { width:4px; height:4px; display:block; float:left; margin:8px 3px 0; background:#ccc; }
+.timer table th .hour { position:absolute; top:0; left:-10px; font-size:11px; font-weight:normal; width: 12px; }
+.timer table th .hour.end { left: inherit; right:-12px; }
+.timer table th .square:first-child { margin-left:4px; }
+.timer table td.info { padding:0 0 0 2px; }
+.timer table td.info input { border:0; background:#fff; margin:0; box-shadow:none; transition:none; padding:0; color:#666; }
+.timer table td { width: 6%; padding:5px 0; text-align:center; }
+.timer table tr { border-bottom:1px solid #ccc; }
+.timer footer { margin-top:2px; background:#ddd; padding:5px 10px 0; }
+.timer footer input { float:left; margin:0 5px 0 0; }
+.timer footer label { margin:0; }

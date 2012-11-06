@@ -4,7 +4,7 @@ class View extends Laravel\View
 {
 	public function get()
 	{
-		if (Request::env() == 'local') {
+		if (strpos($this->path, 'storage/views') === FALSE && Request::env() == 'local') {
 			$__data = $this->data();
 			ob_start();
 	

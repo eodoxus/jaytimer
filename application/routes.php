@@ -38,6 +38,8 @@ Route::get('/', function()
 });
 */
 
+Bundle::start('orchestra');
+
 Route::controller('home');
 
 /*

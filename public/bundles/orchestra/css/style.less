@@ -1,0 +1,127 @@
+@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap/mixins.less";
+
+body {
+	background: url('../img/bg.png');
+}
+
+section.container, section.container-fluid {
+	padding-top: 45px;
+}
+
+.form-actions {
+	&.clean {
+		background-color: transparent;
+		border: 0px;
+	}
+}
+
+.nav > .dropdown.active > a:hover {
+	color:#333;
+}
+
+.navbar {
+	.brand {
+		color: #333;
+		font-weight: bold;
+	}
+
+	.nav {
+		> li > a {
+			color: #666;
+
+			&:hover {
+				color: #333;
+			}
+		}
+
+		> .dropdown.open > a, > .dropdown.open > a:hover {
+			color:#333;
+		}
+
+	}
+}
+
+@media (min-width: 979px) {
+	&.navbar-fixed-top {
+		.navbar-inner {
+			background: transparent url('../img/top-bar-white.png') repeat-x bottom left;
+			box-shadow: none;
+		}
+	}
+
+	.table {
+		thead {
+			tr {
+				background: transparent url('../img/top-bar-white.png') repeat-x top left;
+			}
+		}
+	}
+}
+
+.pagination a, .current, .previous_page, .next_page
+{
+	float: left;
+	line-height: (@baseLineHeight * 2) - 2;
+	text-decoration: none;
+	border-left-width: 0;
+}
+
+.pagination {
+	ul {
+		.box-shadow(0 0px 0px rgba(0, 0, 0, 0));
+	}
+	a, span {
+		background: transparent;
+		border: 0px solid #DDD;
+	}
+
+	li:first-child {
+		border-left-width: 0px;
+		.border-radius(3px 0 0 3px);
+
+		a, span {
+			border-left-width: 0px;
+		}
+	}
+	
+	li:last-child {
+		.border-radius(0 3px 3px 0);
+	}
+}
+
+.table {
+
+	tbody td {
+		.meta {
+			font-size: 11px;
+		}
+	}
+}
+
+.well-resources {
+	padding: 8px 0;
+
+	.nav-stacked {
+		a {
+			background: #fff;
+			
+			.icon-chevron-right {
+				float: right;
+				margin-top: 2px;
+				margin-right: -6px;
+				opacity: .25;
+			}
+		}
+	}
+}
+
+.navbar-form .select2-container {
+	margin-top: 5px;
+}
+
+.select2-container {
+	&[class*="span"] {
+		margin-left: 0;
+	}
+}
